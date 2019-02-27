@@ -3,6 +3,7 @@ package ru.stateofmind.javaspringblog.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import ru.stateofmind.javaspringblog.service.impl.MemPostService;
 
 @Controller
@@ -15,8 +16,8 @@ public class PostController {
 	}
 
 	@GetMapping("/")
-	public String hello(Model model) {
-		model.addAttribute("posts", memPostService.search());
+	public String hello(Model model, @RequestParam(required = false) String query) {
+		model.addAttribute("posts", memPostService.search(query));
 		return "hello";
 	}
 }

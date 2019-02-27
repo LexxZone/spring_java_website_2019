@@ -10,5 +10,5 @@ import java.util.List;
  * created: 2019-02-27
  */
 public interface PostService {
-    List<Post> search();
+    List<Post> search(String query);
 }
