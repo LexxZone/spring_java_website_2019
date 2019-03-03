@@ -3,7 +3,6 @@ package ru.stateofmind.javaspringblog.service.impl;
 import org.springframework.stereotype.Service;
 import ru.stateofmind.javaspringblog.dto.PostDto;
 import ru.stateofmind.javaspringblog.service.api.PostService;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

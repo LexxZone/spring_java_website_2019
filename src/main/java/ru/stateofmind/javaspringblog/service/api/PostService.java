@@ -1,7 +1,6 @@
 package ru.stateofmind.javaspringblog.service.api;
 
 import ru.stateofmind.javaspringblog.dto.PostDto;
-
 import java.util.List;
 
 /**

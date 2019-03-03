@@ -3,7 +3,7 @@ package ru.stateofmind.javaspringblog.jpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import ru.stateofmind.javaspringblog.domain.Post;
-
+import java.util.List;
 
 /**
  * @author Alexey Dvoryaninov
@@ -12,4 +12,6 @@ import ru.stateofmind.javaspringblog.domain.Post;
  */
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
+
+    List<Post> findAllByTitleLike(String query);
 }
