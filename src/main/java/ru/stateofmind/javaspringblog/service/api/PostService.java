@@ -1,6 +1,6 @@
 package ru.stateofmind.javaspringblog.service.api;
 
-import ru.stateofmind.javaspringblog.dto.PostDto;
+import ru.stateofmind.javaspringblog.dto.PostDTO;
 import java.util.List;
 
 /**
@@ -9,5 +9,5 @@ import java.util.List;
  * created: 2019-02-27
  */
 public interface PostService {
-    List<PostDto> search(String query);
+    List<PostDTO> search(String query);
 }

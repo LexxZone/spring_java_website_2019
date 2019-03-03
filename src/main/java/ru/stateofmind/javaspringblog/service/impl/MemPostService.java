@@ -1,7 +1,7 @@
 package ru.stateofmind.javaspringblog.service.impl;
 
 import org.springframework.stereotype.Service;
-import ru.stateofmind.javaspringblog.dto.PostDto;
+import ru.stateofmind.javaspringblog.dto.PostDTO;
 import ru.stateofmind.javaspringblog.service.api.PostService;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,18 +17,18 @@ import java.util.stream.Collectors;
 @Service
 public class MemPostService implements PostService {
 
-    private List<PostDto> posts = new ArrayList<>(Arrays.asList(
-            PostDto.builder()
+    private List<PostDTO> posts = new ArrayList<>(Arrays.asList(
+            PostDTO.builder()
                     .title("First Title")
                     .body("First body")
                     .img("/img/001.jpg")
                     .build(),
-            PostDto.builder()
+            PostDTO.builder()
                     .title("Second Title")
                     .body("Second body")
                     .img("/img/002.jpg")
                     .build(),
-            PostDto.builder()
+            PostDTO.builder()
                     .title("Third Title")
                     .body("Third body")
                     .img("/img/003.jpg")
@@ -36,7 +36,7 @@ public class MemPostService implements PostService {
     );
 
     @Override
-    public List<PostDto> search(String query) {
+    public List<PostDTO> search(String query) {
         return query != null && !query.isEmpty() ?
                 posts.stream().filter(post -> post.getTitle().toLowerCase()
                 .matches(".*" + query.toLowerCase() + ".*"))

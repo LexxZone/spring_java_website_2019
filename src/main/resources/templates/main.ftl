@@ -17,9 +17,9 @@
     <div class="nav-wrapper">
         <a href="#" class="brand-logo" style="margin-left: 30px;">MY JAVA SPRING BLOG</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="sass.html">Супер</a></li>
+            <li><a href="badges.html">Всяко разное</a></li>
+            <li><a href="collapsible.html">Контакты</a></li>
             <li>
                 <form>
                     <div class="input-field">
@@ -32,6 +32,7 @@
         </ul>
     </div>
 </nav>
+<br />
 <#nested>
 
 
@@ -40,11 +41,11 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Контактная тема</h5>
+                <p class="grey-text text-lighten-4">Данный блог сделан на JAVA и SPRING в строго учебных целях</p>
             </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Ссылки</h5>
                 <ul>
                     <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
@@ -56,7 +57,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2019 Copyright
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
